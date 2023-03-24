@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #424045;
+}
+
+body{
+    background: #efefef;
+}
+
+nav{
+    display: flex;
+    background: #1877F2;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center; 
+}
+
+.logo{
+    height: 40px;
+    width: 150px;
+    padding-left: 15px;
+}
+
+.nav-left ul li{
+    padding-left: 40px;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-left ul li img{
+    padding-left: 10px;
+    margin: 0;
+}
+
+
+.search-box{
+    width: 350px;
+    background: #efefef;
+    padding: 0px 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-box img{
+    width: 18px;
+    height: 20px;
+}
+
+.search-box input{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 10px;
+}
+
+.user-icon{
+    margin-left: 30px;
+    padding-right: 15px;
+}
+
+.user-icon img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.online{
+    position: relative;
+}
+
+.online::after{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background: #00c458;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+
+.contaner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 2%;
+}
+
+.main-con{
+    flex-basis: 80%;
+}
+
+.cover-pic{
+    display: flex;
+    justify-content: center;
+}
+
+.cover-pic img{
+    padding: 15px;
+    height: 500px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.profile-pic{
+    padding: 15px;
+    margin: 15px;
+    background: #fff;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-pic img{
+    height: 100px;
+    width: 100px;
+}
+
+.mutual-circle img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-name{
+    padding: 0 15px;
+}
+
+.profile-name p{
+    padding: 5px 0 15px;
+}
+
+.profile-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.frd-icon{
+    background: url("assets/add-friends.png") no-repeat;
+
+}
+
+.feed-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.left-side{
+    flex-basis: 25%;
+}
+
+.left-intro{
+    background: #fff;
+}
+
+.left-intro h4{
+    padding-top: 10px;
+    padding-left: 5px;
+    color: #6e6e6e;
+}
+
+.left-intro p{
+    padding: 20px;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+}
+
+.left-side hr{
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+.left-side ul{
+    padding: 15px 30px;
+    align-items: center;
+    margin: auto;
+    color: #424045;
+}
+
+.right-add-post{
+    background: #fff;
+}
+
+.right-side{
+    flex-basis: 73%;
+    background: #fff;
+}
+
+.pro-pic-name{
+    display: flex;
+    padding: 10px;
+}
+
+.pro-pic-name img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+
+.pro-pic-name .p-name{
+    padding: 10PX 15px;
+}
+
+.p-name .public-txt {
+    font-size: 13px;
+}
+
+.post-box{
+    float: right;
+    padding: 0 10px;
+}
+
+.post-box textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+
+.post-box img{
+    width: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.post-box a{
+    text-decoration: none;
+    font-size: 13px;
+    color: gray;
+}
+
+.post-box ul li{
+    padding: 10px 0px 10px 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.frd-btn{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    height: 30px;
+    width: 100px;
+    padding: 0;
+    background: #6e6e6e;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.frd-btn img{
+    height: 15px;
+    width: 15px;
+}
+
+.frd-btn .frd-btn-txt {
+    color: #000;
+    padding-left: 5px;
+}
+
+.msg-btn{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    height: 30px;
+    width: 100px;
+    padding: 0;
+    background: #1877F2;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.msg-btn img{
+    height: 15px;
+    width: 15px;
+}
+
+.msg-btn .msg-btn-txt {
+    color: #fff;
+    padding-left: 5px;
+}
